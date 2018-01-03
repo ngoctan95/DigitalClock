@@ -26,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-oX-2vu">
-                                <rect key="frame" x="341.66666666666669" y="251.66666666666669" width="61" height="46.666666666666686"/>
+                                <rect key="frame" x="314" y="247" width="41" height="40"/>
                                 <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:58" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tc-ds-mzy">
-                                <rect key="frame" x="82.333333333333314" y="216.00000000000003" width="250.33333333333337" height="116.66666666666671"/>
+                                <rect key="frame" x="110.33333333333334" y="215.99999999999997" width="194.66666666666666" height="100.33333333333329"/>
                                 <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,10 +52,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lblStatus" destination="iZN-oX-2vu" id="uRc-98-LAl"/>
+                        <outlet property="lblTime" destination="1Tc-ds-mzy" id="R1D-py-TCv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.1875" y="117.77343749999999"/>
+            <point key="canvasLocation" x="338" y="168"/>
         </scene>
     </scenes>
     <resources>

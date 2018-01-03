@@ -9,43 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    let techmaster = (1, "hi")
-    let float:Float = 1.0
+    @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var lblStatus: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(techmaster.0)
-        print(techmaster.1)
-        print("\(techmaster.0) and \(techmaster.1)")
-        print((Int).self,float)
-        
-        let techmaster1 = (add : 14, so:"1")
-        let (_,_) = techmaster1
-        print("\(techmaster1.add)")
-        
-        var number = "123"
-        var converted = Int(number)
-        if converted != nil
-        {
-            print(converted!)
-        }
-        else
-        {
-            print("nil roi")
-        }
-        
-        //
-        if let temp = Int(number), let temNum = Int("11a"), temp > temNum{
-            print(temp)
-        }
+        self.getCurrentDateTime()
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ViewController.getCurrentDateTime), userInfo: nil, repeats: true)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+   @objc func getCurrentDateTime() {
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minute = calendar.component(.minute, from: date)
+        lblTime.text = "\(hour):\(minute)"
+        lblStatus.text = hour > 12 ?"PM":"AM"
+        print(lblTime.text!)
+    }
+
 }
 
