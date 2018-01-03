@@ -13,6 +13,8 @@
 		27EB9AD71FFBD46A008C92BF /* DigitalClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27EB9AD51FFBD46A008C92BF /* DigitalClock.xcdatamodeld */; };
 		27EB9AD91FFBD46A008C92BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EB9AD81FFBD46A008C92BF /* Assets.xcassets */; };
 		27EB9ADC1FFBD46A008C92BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EB9ADA1FFBD46A008C92BF /* LaunchScreen.storyboard */; };
+		27EB9AE81FFBD6D7008C92BF /* Let's go Digital Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27EB9AE61FFBD6D7008C92BF /* Let's go Digital Regular.ttf */; };
+		27EB9AE91FFBD6D7008C92BF /* BackGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27EB9AE71FFBD6D7008C92BF /* BackGround.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		27EB9AD81FFBD46A008C92BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27EB9ADB1FFBD46A008C92BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27EB9ADD1FFBD46A008C92BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EB9AE61FFBD6D7008C92BF /* Let's go Digital Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let's go Digital Regular.ttf"; sourceTree = "<group>"; };
+		27EB9AE71FFBD6D7008C92BF /* BackGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackGround.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		27EB9ACD1FFBD46A008C92BF /* DigitalClock */ = {
 			isa = PBXGroup;
 			children = (
+				27EB9AE51FFBD6C2008C92BF /* Resources */,
 				27EB9ACE1FFBD46A008C92BF /* AppDelegate.swift */,
 				27EB9AD01FFBD46A008C92BF /* ViewController.swift */,
 				27EB9AD21FFBD46A008C92BF /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				27EB9AD51FFBD46A008C92BF /* DigitalClock.xcdatamodeld */,
 			);
 			path = DigitalClock;
+			sourceTree = "<group>";
+		};
+		27EB9AE51FFBD6C2008C92BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27EB9AE71FFBD6D7008C92BF /* BackGround.jpg */,
+				27EB9AE61FFBD6D7008C92BF /* Let's go Digital Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27EB9ADC1FFBD46A008C92BF /* LaunchScreen.storyboard in Resources */,
+				27EB9AE81FFBD6D7008C92BF /* Let's go Digital Regular.ttf in Resources */,
 				27EB9AD91FFBD46A008C92BF /* Assets.xcassets in Resources */,
 				27EB9AD41FFBD46A008C92BF /* Main.storyboard in Resources */,
+				27EB9AE91FFBD6D7008C92BF /* BackGround.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

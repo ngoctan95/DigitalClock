@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Let's go Digital Regular.ttf">
+            <string>LetsgoDigital-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigitalClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ivO-rt-LoK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-oX-2vu">
+                                <rect key="frame" x="341.66666666666669" y="251.66666666666669" width="61" height="46.666666666666686"/>
+                                <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:58" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tc-ds-mzy">
+                                <rect key="frame" x="82.333333333333314" y="216.00000000000003" width="250.33333333333337" height="116.66666666666671"/>
+                                <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Tc-ds-mzy" firstAttribute="centerY" secondItem="iZN-oX-2vu" secondAttribute="centerY" id="1ke-Zs-0ad"/>
+                            <constraint firstItem="ivO-rt-LoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="74e-I2-zIB"/>
+                            <constraint firstItem="1Tc-ds-mzy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="QbG-tB-hfg"/>
+                            <constraint firstItem="iZN-oX-2vu" firstAttribute="centerY" secondItem="1Tc-ds-mzy" secondAttribute="centerY" id="X7s-ls-xru"/>
+                            <constraint firstItem="ivO-rt-LoK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Yfp-cd-v06"/>
+                            <constraint firstItem="ivO-rt-LoK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cXY-Hn-NGB"/>
+                            <constraint firstItem="iZN-oX-2vu" firstAttribute="leading" secondItem="1Tc-ds-mzy" secondAttribute="trailing" constant="9.5" id="ezg-mA-X7x"/>
+                            <constraint firstItem="1Tc-ds-mzy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oN1-dv-HHf"/>
+                            <constraint firstItem="ivO-rt-LoK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r2l-VB-8Dd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.1875" y="117.77343749999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackGround.jpg" width="1080" height="1920"/>
+    </resources>
 </document>
